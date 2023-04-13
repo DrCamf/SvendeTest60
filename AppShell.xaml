@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SvendeTest60.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SvendeTest60.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <FlyoutItem Title="Flyout 1" FlyoutDisplayOptions="AsMultipleItems">
+        <!-- Startup Pages skal være i top -->
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:LoadingPage}"
+        Route="LoadingPage" />
+
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage"
+        Title="Login Page" />
+
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:HomePage}"
+        Route="HomePage"
+        Title="Home Page" />
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:MessagePage}"
+        Route="MessagePage"
+        Title="Message Page" />
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:MessageSendPage}"
+        Route="MessageSendPage"
+        Title="Message Send Page" />
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:RegisterPage}"
+        Route="RegisterPage"
+        Title="Register Page" />
+    </FlyoutItem>
+
+</Shell>

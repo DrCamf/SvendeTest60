@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SvendeTest60.Views.LoginPage"
+             xmlns:viewmodel ="clr-namespace:SvendeTest60.ViewModels"
+             x:DataType="viewmodel:LoginViewModel"
+             Title="LoginPage">
+    <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+        <VerticalStackLayout>
+
+            <Label 
+            Text="Welcome to LOGIN!"
+             />
+            <Label Text="Email" />
+            <Entry x:Name="useremail" Placeholder="Enter email" Text="{Binding Useremail}"/>
+            <Label Text="Adgangs kode" />
+            <Entry x:Name="userpassword" Placeholder="Enter password" IsPassword="True" Text="{Binding Password}"/>
+            <Button Text="Login" WidthRequest="100" CornerRadius="20" HorizontalOptions="Center" Command="{Binding LoginCommand}"/>
+
+        </VerticalStackLayout>
+
+
+    </VerticalStackLayout>
+</ContentPage>

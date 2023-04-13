@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SvendeTest60.Views.RegisterPage"
+             Title="RegisterPage">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Image
+            x:Name="imagename"
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            <Label Text="First name" />
+            <Entry x:Name="firstName" Placeholder="Enter First name" Text="{Binding FirstName}"   />
+            <Label Text="Sir name" />
+            <Entry x:Name="lastName" Placeholder="Enter Sir name" Text="{Binding LastName}"   />
+            <Label Text="Email" />
+            <Entry x:Name="email" Placeholder="Enter Sir name" Text="{Binding Email}"   />
+            <Label Text="Adgangs kode" />
+            <Entry x:Name="userpassword" Placeholder="Enter password" IsPassword="True" Text="{Binding Password}"/>
+            <Label Text="Gentag Adgangs kode" />
+            <Entry x:Name="userpasswordconfirm" Placeholder="Enter password again" IsPassword="True" Text="{Binding Password_repeat}"/>
+            <Label Text="Adreesse" />
+            <Entry x:Name="address" Placeholder="Enter Adress" Text="{Binding Adress}"   />
+            <Label Text="Post nr" />
+            <Entry x:Name="zipcode" Placeholder="Enter POst nr" Text="{Binding Zipcode}"   />
+            <Label Text="By" />
+            <Entry x:Name="city" Placeholder="Enter By navn" Text="{Binding City}"  />
+            <Label Text="BirthDate" />
+            <Entry x:Name="birthDate" Placeholder="Enter Birthdate" Text="{Binding BirthDate}"   />
+            <Label Text="User Picture" />
+            <Entry x:Name="picture" Placeholder="UpLoad billede" Text="{Binding Picture}"   />
+            <Button Text="Upload" WidthRequest="100" CornerRadius="20" HorizontalOptions="Center" Command="{Binding GetPictureCommand}"/>
+            <Button Text="Registrer" WidthRequest="100" CornerRadius="20" HorizontalOptions="Center" Command="{Binding RegisterCommand}"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

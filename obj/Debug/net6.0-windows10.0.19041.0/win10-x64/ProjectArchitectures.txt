@@ -1,0 +1,1 @@
+D:\repos\SvendeTest60\SvendeTest60.csproj;x64

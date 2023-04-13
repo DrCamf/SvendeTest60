@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SvendeTest60</name>
+    </assembly>
+    <members>
+        <member name="M:SvendeTest60.Services.UserApiService.InsertCity(SvendeTest60.Models.CityModel)">
+            <summary>
+            insert city model and return the id of the insert
+            </summary>
+            <param name="city">City model</param>
+            <returns>int id</returns>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.BaseViewModel.Title">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.BaseViewModel.title"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.BaseViewModel.IsLoading">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.BaseViewModel.isLoading"/>
+        </member>
+        <member name="F:SvendeTest60.ViewModels.HomeViewModel.messageOpenCommand">
+            <summary>The backing field for <see cref="P:SvendeTest60.ViewModels.HomeViewModel.MessageOpenCommand"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.HomeViewModel.MessageOpenCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SvendeTest60.ViewModels.HomeViewModel.MessageOpen"/>.</summary>
+        </member>
+        <member name="F:SvendeTest60.ViewModels.HomeViewModel.logOutCommand">
+            <summary>The backing field for <see cref="P:SvendeTest60.ViewModels.HomeViewModel.LogOutCommand"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.HomeViewModel.LogOutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SvendeTest60.ViewModels.HomeViewModel.LogOut"/>.</summary>
+        </member>
+        <member name="F:SvendeTest60.ViewModels.HomeViewModel.goRegisterCommand">
+            <summary>The backing field for <see cref="P:SvendeTest60.ViewModels.HomeViewModel.GoRegisterCommand"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.HomeViewModel.GoRegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SvendeTest60.ViewModels.HomeViewModel.GoRegister"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.LoginViewModel.Useremail">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.LoginViewModel.useremail"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.LoginViewModel.Password">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.LoginViewModel.password"/>
+        </member>
+        <member name="F:SvendeTest60.ViewModels.LoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:SvendeTest60.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.LoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SvendeTest60.ViewModels.LoginViewModel.Login"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.MessageViewModel.Subject">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.MessageViewModel.subject"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.MessageViewModel.Body">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.MessageViewModel.body"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.MessageViewModel.Sentid">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.MessageViewModel.sentid"/>
+        </member>
+        <member name="F:SvendeTest60.ViewModels.MessageViewModel.messageSendCommand">
+            <summary>The backing field for <see cref="P:SvendeTest60.ViewModels.MessageViewModel.MessageSendCommand"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.MessageViewModel.MessageSendCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SvendeTest60.ViewModels.MessageViewModel.MessageSend"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Firstname">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.firstname"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Lastname">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.lastname"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Email">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.email"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Password">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.password"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Password_repeat">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.password_repeat"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Address">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.address"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Zipcode">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.zipcode"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.City">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.city"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Birthdate">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.birthdate"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Picture">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.picture"/>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.Image">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.RegisterViewModel.image"/>
+        </member>
+        <member name="F:SvendeTest60.ViewModels.RegisterViewModel.getPictureCommand">
+            <summary>The backing field for <see cref="P:SvendeTest60.ViewModels.RegisterViewModel.GetPictureCommand"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.GetPictureCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SvendeTest60.ViewModels.RegisterViewModel.GetPicture"/>.</summary>
+        </member>
+        <member name="F:SvendeTest60.ViewModels.RegisterViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:SvendeTest60.ViewModels.RegisterViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.RegisterViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SvendeTest60.ViewModels.RegisterViewModel.Register"/>.</summary>
+        </member>
+    </members>
+</doc>
