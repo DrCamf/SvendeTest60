@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = SvendeTest60.Resources.Sty
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[D:/repos/SvendeTest60/Views/CoursesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SvendeTest60.Views.CoursesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CoursesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CoursesPage.xaml
+
 [D:/repos/SvendeTest60/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SvendeTest60.Views.HomePage.xaml
@@ -76,8 +82,26 @@ build_metadata.AdditionalFiles.ManifestResourceName = SvendeTest60.Views.Message
 build_metadata.AdditionalFiles.TargetPath = Views\MessageSendPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\MessageSendPage.xaml
 
+[D:/repos/SvendeTest60/Views/PaySoulutionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SvendeTest60.Views.PaySoulutionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PaySoulutionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PaySoulutionPage.xaml
+
 [D:/repos/SvendeTest60/Views/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SvendeTest60.Views.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[D:/repos/SvendeTest60/Views/SingleCoursePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SvendeTest60.Views.SingleCoursePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SingleCoursePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SingleCoursePage.xaml
+
+[D:/repos/SvendeTest60/Views/UserProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = SvendeTest60.Views.UserProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UserProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UserProfilePage.xaml

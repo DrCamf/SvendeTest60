@@ -45,6 +45,30 @@
         ContentTemplate="{DataTemplate local:RegisterPage}"
         Route="RegisterPage"
         Title="Register Page" />
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:UserProfilePage}"
+        Route="UserProfilePage"
+        Title="Profile Page" />
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:CoursesPage}"
+        Route="CoursesPage"
+        Title="Courses Page" />
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:SingleCoursePage}"
+        Route="SingleCoursePage"
+        Title="Single Course Page" />
+        <ShellContent
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"
+        ContentTemplate="{DataTemplate local:PaySoulutionPage}"
+        Route="PaySoulutionPage"
+        Title="Pay Solution Page" />
     </FlyoutItem>
 
 </Shell>
