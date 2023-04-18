@@ -44,12 +44,13 @@ namespace SvendeTest60.ViewModels
         public MessageViewModel()
         {
             this.messageApiService = new MessageApiService();
-
+            users = App.UserBasicInfo;
         }
 
         [RelayCommand]
         async Task Message()
         {
+            App.UserBasicInfo = await messageApiService.GetUser();
             await Shell.Current.GoToAsync($"//{nameof(MessageSendPage)}");
         }
 

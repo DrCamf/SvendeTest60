@@ -22,7 +22,7 @@ namespace SvendeTest60.ViewModels
         [RelayCommand]
         async Task MessageOpen()
         {
-            App.UserBasicInfo = await messageApiService.GetUser();
+           
             await Shell.Current.GoToAsync($"//{nameof(MessagePage)}");
         }
 

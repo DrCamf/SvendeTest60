@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SvendeTest60.Models
 {
-    class CoursesViewModel
+    public class CoursesViewModel
     {
+
     }
 }

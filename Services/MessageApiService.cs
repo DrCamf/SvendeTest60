@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 
+
 namespace SvendeTest60.Services
 {
     public class MessageApiService
@@ -41,8 +42,29 @@ namespace SvendeTest60.Services
                 //HttpResponseMessage response = await _httpClient.GetAsync("/svendetest/api/users");
 
                 // HttpResponseMessage response = await _httpClient.GetAsync("/svendetest/api/users");
-                var content = await _httpClient.GetAsync("/svendetest/api/users");
-                _users = JsonConvert.DeserializeObject<List<UserModel>>(await content.Content.ReadAsStringAsync());
+                var client = new HttpClient();
+                string url = "https://svende.elthoro.dk/svendetest/api/users";
+                client.BaseAddress = new Uri(url);
+
+
+                //var content = await _httpClient.GetAsync("/svendetest/api/users");
+               // _users = JsonConvert.DeserializeObject<List<UserModel>>(await content.Content.ReadAsStringAsync());
+
+                HttpResponseMessage response = await client.GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = response.Content.ReadAsStringAsync().Result;
+                    _users = JsonConvert.DeserializeObject<List<UserModel>>(content);
+                    StatusMessage = "Access successful";
+                    return _users;
+                }
+                else
+                {
+                    StatusMessage = "Access unsuccessful";
+                    return null;
+                }
+
+
 
                 return _users;
                 /*if (response.IsSuccessStatusCode)
