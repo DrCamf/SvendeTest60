@@ -12,7 +12,7 @@
             Text="Welcome to LOGIN!"
              />
             <Label Text="Email" />
-            <Entry x:Name="useremail" Placeholder="Enter email" Text="{Binding Useremail}"/>
+            <Entry x:Name="useremail" Placeholder="Enter email" Text="{Binding Email}"/>
             <Label Text="Adgangs kode" />
             <Entry x:Name="userpassword" Placeholder="Enter password" IsPassword="True" Text="{Binding Password}"/>
             <Button Text="Login" WidthRequest="100" CornerRadius="20" HorizontalOptions="Center" Command="{Binding LoginCommand}"/>

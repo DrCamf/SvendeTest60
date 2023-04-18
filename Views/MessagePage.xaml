@@ -9,6 +9,6 @@
             Text="Welcome to MESSAGES!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-
+        <Button Text="Messages" WidthRequest="100" CornerRadius="20" HorizontalOptions="Center" Command="{Binding MessageCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

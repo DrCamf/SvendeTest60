@@ -35,8 +35,8 @@
         <member name="P:SvendeTest60.ViewModels.HomeViewModel.GoRegisterCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SvendeTest60.ViewModels.HomeViewModel.GoRegister"/>.</summary>
         </member>
-        <member name="P:SvendeTest60.ViewModels.LoginViewModel.Useremail">
-            <inheritdoc cref="F:SvendeTest60.ViewModels.LoginViewModel.useremail"/>
+        <member name="P:SvendeTest60.ViewModels.LoginViewModel.Email">
+            <inheritdoc cref="F:SvendeTest60.ViewModels.LoginViewModel.email"/>
         </member>
         <member name="P:SvendeTest60.ViewModels.LoginViewModel.Password">
             <inheritdoc cref="F:SvendeTest60.ViewModels.LoginViewModel.password"/>
@@ -55,6 +55,12 @@
         </member>
         <member name="P:SvendeTest60.ViewModels.MessageViewModel.Sentid">
             <inheritdoc cref="F:SvendeTest60.ViewModels.MessageViewModel.sentid"/>
+        </member>
+        <member name="F:SvendeTest60.ViewModels.MessageViewModel.messageCommand">
+            <summary>The backing field for <see cref="P:SvendeTest60.ViewModels.MessageViewModel.MessageCommand"/>.</summary>
+        </member>
+        <member name="P:SvendeTest60.ViewModels.MessageViewModel.MessageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:SvendeTest60.ViewModels.MessageViewModel.Message"/>.</summary>
         </member>
         <member name="F:SvendeTest60.ViewModels.MessageViewModel.messageSendCommand">
             <summary>The backing field for <see cref="P:SvendeTest60.ViewModels.MessageViewModel.MessageSendCommand"/>.</summary>

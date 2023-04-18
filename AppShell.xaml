@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:SvendeTest60.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <FlyoutItem Title="Flyout 1" FlyoutDisplayOptions="AsMultipleItems">
+    
         <!-- Startup Pages skal være i top -->
         <ShellContent
         FlyoutItemIsVisible="False"
@@ -69,6 +69,6 @@
         ContentTemplate="{DataTemplate local:PaySoulutionPage}"
         Route="PaySoulutionPage"
         Title="Pay Solution Page" />
-    </FlyoutItem>
+   
 
 </Shell>

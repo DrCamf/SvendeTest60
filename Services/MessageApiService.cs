@@ -71,9 +71,25 @@ namespace SvendeTest60.Services
             UserModel userInfo;
             try
             {
-                var content = await _httpClient.GetAsync("/svendetest/api/users/search/" + email);
-                userInfo = JsonConvert.DeserializeObject<UserModel>(await content.Content.ReadAsStringAsync());
-                return userInfo;
+                var client = new HttpClient();
+                string url = "/svendetest/api/users/search/" + email;
+                client.BaseAddress = new Uri(url);
+
+                HttpResponseMessage response = await client.GetAsync(url);
+                if(response.IsSuccessStatusCode)
+                {
+                    string content = response.Content.ReadAsStringAsync().Result;
+                    userInfo = JsonConvert.DeserializeObject<UserModel>(content);
+                    return userInfo;
+                } else
+                {
+                    return null;
+                }
+               
+
+
+              
+               
             }
             catch (Exception ex)
             {

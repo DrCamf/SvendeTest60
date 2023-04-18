@@ -14,7 +14,7 @@ namespace SvendeTest60.ViewModels
     public partial class LoginViewModel : BaseViewModel
     {
         [ObservableProperty]
-        private string useremail;
+        private string email;
 
         [ObservableProperty]
         private string password;
@@ -29,16 +29,15 @@ namespace SvendeTest60.ViewModels
         [RelayCommand]
         async Task Login()
         {
-            if (string.IsNullOrWhiteSpace(useremail) || string.IsNullOrWhiteSpace(password))
+            if (string.IsNullOrWhiteSpace(Email) || string.IsNullOrWhiteSpace(Password))
             {
                 await DisplayLoginMessage("Invalid Login Attempt");
             }
             else
             {
                 // call api to attempt a login
-                var loginModel = new UserModel();
-                loginModel.Password = password;
-                loginModel.Email = useremail;
+                var loginModel = new LoginModel(Email, Password);
+               
 
                 var response = await userApiService.Login(loginModel);
 
@@ -59,7 +58,7 @@ namespace SvendeTest60.ViewModels
                     var userInfo = new UserModel()
                     {
                         Id = int.Parse(response.UserId),
-                        Email = useremail,
+                        Email = Email,
                         Role = role
                     };
 

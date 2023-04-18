@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using SvendeTest60.Models;
 using SvendeTest60.Services;
+using SvendeTest60.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,6 +48,12 @@ namespace SvendeTest60.ViewModels
         }
 
         [RelayCommand]
+        async Task Message()
+        {
+            await Shell.Current.GoToAsync($"//{nameof(MessageSendPage)}");
+        }
+
+        [RelayCommand]
         async Task MessageSend()
         {
 
@@ -60,13 +67,12 @@ namespace SvendeTest60.ViewModels
                 // call api to attempt a login
                 var messageModel = new MessageModel(subject, body);
 
+                //Time zone 
                 DateTime timeUtc = DateTime.UtcNow;
                 TimeZoneInfo cstZone = TimeZoneInfo.FindSystemTimeZoneById("Romance Standard Time");
                 DateTime cstTime = TimeZoneInfo.ConvertTimeFromUtc(timeUtc, cstZone);
 
                 messageModel.Sent_at = cstTime.ToString("yyyy/MM/dd HH:mm:ss");
-
-
 
                 var model = await messageApiService.SendMessage(messageModel);
                 int messageId = model.Id;
